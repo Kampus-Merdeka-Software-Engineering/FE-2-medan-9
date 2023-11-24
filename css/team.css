@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+#icon-menu {
+  display: none;
+}
+nav {
+    position: fixed;
+    top: 30px;
+    left: 210px;
+    right: inherit;
+    z-index: 9999;
+    width: 68%;
+    background-color: rgb(101, 49, 15); ;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 0rem;
+    color: #ffffff;
+    font-family:"Lucida Sans", sans-serif;
+    border-radius:20px; 
+}
+.nav-links li a:hover {
+    color:  rgb(173, 86, 28);; 
+    text-decoration: ; 
+  }
+nav .logo {
+    font-size: 1.rem;
+    width: 30%;
+}
+
+nav .logo img {
+    padding-top: 0px;
+    width: 95px;
+ 
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+   
+}
+
+.nav-links li a {
+    color: inherit;
+    margin-left:1rem;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: serif;
+    letter-spacing: 1px;
+    padding:10px; 
+    width: 30%;
+    font-size: large;
+}
+.nav-scrolled {
+  background-color:  rgb(154, 76, 25); /* Change the color and opacity as needed */
+}
+
+.login img {
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: 10px;
+  
+}
+
+.contents {
+    height: 50vh;
+    color: #000000;
+    text-align: center;
+    display: flex;
+    color: #000000;
+    text-align: center;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    padding: 200px 100px;
+    font-family:'Cinzel', serif;
+    letter-spacing: 2px;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 900px;
+}
+
+.row {
+    display: inline-block;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-top:800px;
+    margin:0px;
+    
+    padding: 10px 20px;;
+    font-size: 18px;
+    font-weight: 400;
+    display: flex;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+    font-size: 37px;
+    padding-bottom:800px;
+    font-weight: 700px;
+    display: inline-block;
+    position: relative;
+}
+
+.btn {
+    padding: 15px 37px;
+    font-size: 18px;
+    font-weight: 700px;
+    display: inline-block;
+    margin-right: 4px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    background-color: rgb(237, 174, 85);
+    border-color: #ffc46b;
+    text-align: center;
+    cursor: pointer;
+    line-height: 1.5;
+    width: 130px;
+    text-decoration: none;
+    border-radius: 50px;
+   
+}
+
+.btn:hover {
+    color: hsl(0, 0%, 69%); 
+    text-decoration: ; 
+  }
+
+  .hero p {
+    font-family:  serif;
+    padding-top: 100px;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+   
+}
+.custom-hr {
+  border: 1px solid  rgb(101, 49, 15);/* Warna dan ketebalan garis */
+  margin: 10px 400px; /* Ruang atas dan bawah dari garis */
+}
+
+
+.team {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.team .box-team {
+  flex-direction: row; /* Arrange items in a row */
+  align-items: left; /* Center vertically */
+  margin-top: -80px; /* Center the container */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: -50px;
+  margin-bottom: 50px;
+}
+
+.team .box-team .box {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  transition: transform 0.3s ease-in-out;
+ 
+}
+
+.team .box-team .box:hover {
+  transform: scale(1.1); 
+}
+
+.team .box-team .box img {
+  width: 190px;
+  height: 228px;
+  padding-top: 120px;
+  margin: 4px 35px;
+
+}
+
+
+.team .box-team .box p {
+  font-weight: 100;
+  margin-bottom: 10px;
+  font-family: serif;
+  letter-spacing: 1px;
+}
+
+.team .box-team .box h3 {
+  font-family: serif;
+  letter-spacing: 1px;
+}
+footer {
+  text-align: center;
+  background-color: rgb(101, 49, 15);
+  margin-top: 0px; /* Ruang atas footer */
+  padding: 1px; /* Padding di dalam footer */
+  color: #fff;
+}
+
+
+@media screen and (max-width: 768px) {
+  #icon-menu {
+    display: block;
+    margin-left: 70px;
+    margin-top: -4px;
+  }
+
+  nav {
+    margin-left: -160px;
+    height: 60px;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    width: 83%;
+    background-color:rgb(101, 49, 15);
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+
+  .nav-links.showNavbar {
+    display: flex;
+  }
+
+  nav .logo img {
+    width: 90%;
+  }
+  nav .login img{
+    width:20px;
+    margin-right: 0px;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+    font-size: 12px;
+    font-family: serif;
+    margin-left: -50px;
+  }
+  .nav-links li a {
+    color: inherit;
+    margin-left: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: serif;
+    letter-spacing: 1px;
+    padding: 10px;
+    width: 30%;
+    font-size: 14px;
+  }
+
+
+  .nav-links.scrolled {
+    background-color: rgb(154, 76, 25); /* Change the color and opacity as needed */
+    /* Change the color and opacity as needed */
+  }
+.hero p {
+    padding-top: 100px;
+    font-size: 17px;
+}
+.custom-hr {
+  margin: 2px 20px; /* Ruang atas dan bawah dari garis */
+}
+footer {
+  font-size: 13px;
+}
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethereal Oasis - Booking</title>
+    <link rel="stylesheet" href="./css/book.css">
+    <link rel="shortcut icon" href="img/logo2.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="head">
+    <nav>
+        <div class="logo">
+            <img src="./img/logo2.png" alt="" srcset="">
+        </div>
+        <i class="fa-solid fa-bars" style="color: #ffffff;" id="icon-menu"  onclick="handleClick(event)"></i>
+        <ul class="nav-links hideNavbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rooms.html">Rooms</a></li>
+            <li><a href="team.html">Team</a></li>
+           
+        </ul>
+        <div class="login">
+            <a href="riwayat.html">
+                <img src="./img/search.png" alt="Search" srcset="">
+            </a>
+            <a href="loginregist.html">
+                <img src="./img/people.png" alt="Login" srcset="">
+            </a>
+        </div>
+    </nav>
+    <div class="container">
+        <p>RESERVATION</p>
+        <form action="pemesanan" method="post">
+            <label for="nama">Full Name:</label>
+            <input type="text" id="nama" name="nama" required>
+    
+            <label for="checkin">Check-in Date:</label>
+            <input type="date" id="checkin" name="checkin" onchange="updatePrice()" required>
+
+            <label for="checkout">Check-out Date:</label>
+            <input type="date" id="checkout" name="checkout" onchange="updatePrice()" required>
+
+            <label for="jeniskamar">Room Type:</label>
+            <select id="jeniskamar" name="jeniskamar" onchange="updatePrice()" required>
+                <option></option>
+                <option value="Deluxe Valley View" data-price="550000">Deluxe Valley View</option>
+                <option value="One Bedroom Pool Villa" data-price="850000">One Bedroom Pool Villa</option>
+                <option value="Suite Pool Access" data-price="1000000">Suite Pool Access</option>
+            </select>
+
+            <label for="jumlahkamar">Number of Rooms:</label>
+            <input type="number" id="jumlahkamar" name="jumlahkamar" required onchange="updatePrice()" />
+
+            <label for="total">Total:</label>
+            <input type="text" id="total" disabled style = "background-color: white;" />
+
+            <label for="Payment">Payment:</label>
+            <select id="Payment" name="Payment" onchange="updatePrice()" required>
+                <option value="Transfer Bank">Transfer Bank</option>
+                <option value="Dana">Dana</option>
+            </select>
+           
+            <input type="submit" value="Book Now">
+        </form>
+      </div>
+      
+      <script src="./js/book.js"></script>
+</body>
+</html>

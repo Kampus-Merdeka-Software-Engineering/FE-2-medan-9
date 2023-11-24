@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethereal Oasis - Riwayat</title>
+    <link rel="stylesheet" href="./css/riwayat.css">
+    <link rel="shortcut icon" href="img/logo2.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="head">
+    <nav>
+        <div class="logo">
+            <img src="./img/logo2.png" alt="" srcset="">
+        </div>
+        <i class="fa-solid fa-bars" style="color: #ffffff;" id="icon-menu"  onclick="handleClick(event)"></i>
+        <ul class="nav-links hideNavbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rooms.html">Rooms</a></li>
+            <li><a href="team.html">Team</a></li>
+           
+        </ul>
+        <div class="login">
+            <a href="riwayat.html">
+                <img src="./img/search.png" alt="Search" srcset="">
+            </a>
+            <a href="loginregist.html">
+                <img src="./img/people.png" alt="Login" srcset="">
+            </a>
+        </div>
+    </nav>
+    <section class="hero">
+        <p>History</p>
+        <hr class="custom-hr">
+    </section>
+
+    
+    <main>
+        <!-- Gantilah data di bawah ini dengan data riwayat pemesanan user Anda -->
+        <div class="booking-card-container">
+                <div class="booking-info">
+                    <h3>Detail Booking</h3>
+                    <img src="./img/kamar1.jpg" alt="Login" srcset="">
+                </div>
+            
+        <form>
+            <div class="elem-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" value="Mrs. Azzahra Riyadi" readonly>
+            </div>
+            <div class="elem-group">
+              <label for="email">Room Type</label>
+              <input type="text" id="room-type" name="room-type" value="1 x Deluxe Valley View" readonly>
+            </div>
+            <div class="elem-group">
+              <label for="phone">Total Harga </label>
+              <input type="text" id="total-price" name="total-price" value="Rp 500000" readonly>
+            </div>
+            <div class="elem-group">
+                <label for="phone">Payment</label>
+                <input type="text" id="payment-method" name="payment-method" value="Dana" readonly>
+              </div>
+            <div class="elem-group inlined">
+              <label for="checkin-date">Check-in Date</label>
+              <input type="text" id="checkin-date" name="checkin" value="11/12/2023" readonly>
+            </div>
+            <div class="elem-group inlined">
+              <label for="checkout-date">Check-out Date</label>
+              <input type="text" id="checkout-date" name="checkout" value="12/12/2023" readonly>
+            </div>
+        <!-- Tambahkan kartu pemesanan sesuai kebutuhan -->
+        </form>
+        </div>
+
+        <script src="./js/riwayat.js"></script>
+</body>
+</html>

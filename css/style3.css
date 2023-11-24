@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    background-image: ;
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-attachment: fixed;
+    height: 200vh;
+}   
+#icon-menu {
+    display: none;
+  }
+nav {
+    position: fixed;
+    top: 30px;
+    left: 210px;
+    right: inherit;
+    z-index: 9999;
+    width: 68%;
+    background-color: rgb(101, 49, 15); ;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 0rem;
+    color: #ffffff;
+    font-family:"Lucida Sans", sans-serif;
+    
+    border-radius: 20px;
+}
+.nav-links li a:hover {
+    color:  rgb(221, 115, 45); 
+    text-decoration: ; 
+  }
+nav .logo {
+    font-size: 1.rem;
+    width: 30%;
+}
+
+nav .logo img {
+    padding-top: 0px;
+    width: 95px;
+
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links li a {
+    color: inherit;
+    margin-left:1rem;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: serif;
+    letter-spacing: 1px;
+    padding:10px;
+    width: 30%;
+    font-size: large;
+}
+.nav-scrolled {
+    background-color:  rgb(173, 89, 33); /* Change the color and opacity as needed */
+  }
+  .login img {
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: 10px;
+    
+   
+}
+.overlay-image {
+    position:center;
+    top: 0px;
+    left: 0px;
+    width: 80%; /* Lebar sesuai dengan elemen kontainer */
+    height: 300%; /* Tinggi sesuai dengan elemen kontainer */
+    z-index: 1;
+    opacity: 0.4;
+}
+
+.hero p {
+    font-family:  serif;
+    padding-top: 100px;
+    text-align: center;
+    font-size: 36px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+   
+}
+.custom-hr {
+    border: 1px solid  rgb(101, 49, 15);/* Warna dan ketebalan garis */
+    margin: 10px 500px; /* Ruang atas dan bawah dari garis */
+    margin-top: -20px;
+}
+
+.rooms{
+  display: flex;
+  justify-content: center;
+  margin-top: -50px;
+  margin-bottom: 30px;
+  height: 200vh;
+}
+.rooms .box{
+    flex-direction: column; /* Arrange items in a row */
+    align-items: left; /* Center vertically */
+    margin: 0 auto; /* Center the container */
+    margin-left: 160px;
+    display: flex;
+    justify-content: center;
+
+}
+.room {
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+}
+.room:hover{
+    transform: scale(1.1); 
+}
+.rooms .box .room img{
+    width: 500px;
+    height: 320px;
+    margin: 30px 0; /* Jarak atas dan bawah */
+    margin-right: 40px; /* Jarak sisi kanan */
+    margin-left: 40px;
+   
+}
+
+.info{
+    color: rgb(0, 0, 0);
+    font-family: serif;
+    text-align: center;
+    justify-content: center;
+    margin:0 ;
+    width: 410px;
+    font-size:14px;
+    letter-spacing: 1px;
+    box-shadow: 0 10px 10px rgb(120, 120, 120);
+    border: 1px solid rgb(255, 255, 255);
+
+}
+.info h3{
+    font-family:  serif;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+.button {
+    padding: 12px 15px;
+    font-size: 14px;
+    display: inline-block;
+    color: #ffffff;
+    background-color:  rgb(101, 49, 15); ;
+    text-align: center;
+    cursor: pointer;
+    line-height: 1.0;
+    width: 160px;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-bottom: 15px;
+   
+}
+footer {
+    text-align: center;
+    background-color: rgb(101, 49, 15);
+    margin-top: 0px; /* Ruang atas footer */
+    padding: 1px; /* Padding di dalam footer */
+    color: #fff;
+  }
+
+  @media screen and (max-width: 768px) {
+    #icon-menu {
+        display: block;
+        margin-left: 70px;
+        margin-top: -4px;
+      }
+    
+      nav {
+        margin-left: -173px;
+        height: 60px;
+      }
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        width: 83%;
+        background-color:rgb(101, 49, 15);
+        text-align: center;
+        transition: background-color 0.3s ease;
+      }
+    
+      .nav-links.showNavbar {
+        display: flex;
+      }
+    
+      nav .logo img {
+        width: 90%;
+      }
+      nav .login img{
+        width:20px;
+        margin-right: 0px;
+      }
+    
+      .nav-links li {
+        margin: 10px 0;
+        font-size: 12px;
+        font-family: serif;
+        margin-left: -50px;
+      }
+      .nav-links li a {
+        color: inherit;
+        margin-left: 1rem;
+        cursor: pointer;
+        text-decoration: none;
+        font-family: serif;
+        letter-spacing: 1px;
+        padding: 10px;
+        width: 30%;
+        font-size: 14px;
+      }
+    
+    
+      .nav-links.scrolled {
+        background-color: rgb(154, 76, 25); /* Change the color and opacity as needed */
+        /* Change the color and opacity as needed */
+      }
+    .hero p {
+        padding-top: 100px;
+        font-size: 17px;
+    }
+    .custom-hr {
+        margin: 2px 70px; /* Ruang atas dan bawah dari garis */
+    }
+    footer {
+        font-size: 13px;
+        clear: both;
+    }   
+   
+    
+        .rooms .box {
+            flex-direction: column;
+            /* Arrange items in a row */
+            align-items: left;
+            /* Center vertically */
+            margin: 0 auto;/* Center the container */
+            margin-left: ;
+            margin-top: -130px;
+            display: flex;
+            justify-content: center;
+        
+        }
+        .rooms {
+            display: flex;
+            justify-content: center;
+           
+        }
+    
+        .rooms .box .room img {
+            width: 130px;
+            height: 110px;
+            margin: 10px 0;
+            /* Jarak atas dan bawah */
+            margin-right: 7px;
+            /* Jarak sisi kanan */
+            margin-left: 15px;
+    
+        }
+    
+        .info {
+            margin: 20px;
+            width: 100px;
+            padding: 0px 20px;
+            font-size: 8px;
+            letter-spacing: 1px;
+            box-shadow: 0 10px 10px rgb(120, 120, 120);
+            border: 1px solid rgb(255, 255, 255);
+    
+        }
+    
+        .info h3 {
+            font-family: serif;
+            font-size: 15px;
+            color: rgb(0, 0, 0);
+        }
+        .button {
+            padding: 9px 2px;
+            font-size: 7px;
+            display: inline-block;
+            color: #ffffff;
+            background-color: rgb(101, 49, 15);
+            ;
+            text-align: center;
+            cursor: pointer;
+            line-height: 1.0;
+            width: 100px;
+            text-decoration: none;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        
+        }
+      
+    }

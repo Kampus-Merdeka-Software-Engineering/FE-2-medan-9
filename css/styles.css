@@ -1,0 +1,544 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+
+}
+
+.head {
+  background-image: url("../img/villaa.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#icon-menu {
+  display: none;
+}
+
+nav {
+  position: fixed;
+  top: 30px;
+  left: 210px;
+  right: inherit;
+  z-index: 9999;
+  width: 68%;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 0rem;
+  color: #ffffff;
+  font-family: "Lucida Sans", sans-serif;
+  border-radius: 20px;
+}
+
+.nav-links li a:hover {
+  color: hsl(0, 0%, 52%);
+  text-decoration: ;
+}
+
+nav .logo {
+  font-size: 1.rem;
+  width: 30%;
+}
+
+nav .logo img {
+  padding-top: 0px;
+
+  width: 90px;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  font-family: "Lucida Sans", sans-serif;
+
+}
+
+.nav-links li a {
+  color: inherit;
+  margin-left: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: serif;
+  letter-spacing: 1px;
+  padding: 10px;
+  width: 30%;
+  font-size: large;
+}
+
+.nav-scrolled {
+  background-color: rgb(101, 49, 15);
+  /* Change the color and opacity as needed */
+}
+
+.login img {
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: 10px;
+
+
+}
+
+.contents {
+  height: 50vh;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 200px 100px;
+  font-family: 'Cinzel', serif;
+  letter-spacing: 2px;
+  font-style: normal;
+  line-height: normal;
+  font-weight: 900px;
+}
+
+.row {
+  display: inline-block;
+  flex-wrap: wrap;
+  width: 50%;
+  padding-top: 800px;
+  margin: 0px;
+
+  padding: 10px 20px;
+  ;
+  font-size: 18px;
+  font-weight: 400;
+  display: flex;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* max-width: 100%; */
+  font-size: 37px;
+  padding-bottom: 70px;
+  font-weight: 700px;
+  display: inline-block;
+  position: relative;
+  animation: fadeIn 1.5s ease-out forwards;
+  /* Animasi fade-in selama 1.5 detik */
+}
+
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.btn {
+  padding: 15px 37px;
+  font-size: 18px;
+  font-weight: 700px;
+  display: inline-block;
+  margin-right: 4px;
+  margin-bottom: 10px;
+  color: #ffffff;
+  background-color: rgb(101, 49, 15);
+
+  text-align: center;
+  cursor: pointer;
+  line-height: 1.5;
+  width: 130px;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: background-color 0.5s ease;
+
+}
+
+.btn:hover {
+  color: hsl(0, 0%, 69%);
+  text-decoration: ;
+}
+
+a {
+  color: #3c4d5f;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.service {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  row-gap: 10px;
+  width: 50%;
+  height: 76px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  background-position: center;
+  font-family: '', serif;
+  padding: 0px 0;
+  top: 710px;
+  left: 340px;
+  position: absolute;
+  border-color: black;
+
+}
+
+
+
+.feature {
+  margin-bottom: 0px;
+}
+
+.feature img {
+  width: 30px;
+  height: 30px;
+
+  margin-top: 7px;
+}
+
+.feature h2 {
+  font-size: medium;
+}
+
+.team {
+  padding: 80px 0 80px 0;
+  background-color: rgb(255, 255, 255);
+  background-position: center;
+  background-size: cover;
+  margin-top: 36px;
+
+}
+
+.image-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  font-family: serif;
+  font-weight: 600;
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Warna latar belakang teks */
+  color: #fff;
+  /* Warna teks */
+  padding: 10px;
+  /* Padding di dalam teks */
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+/* Efek muncul saat gambar disentuh */
+.box:hover .image-text {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1.2);
+
+}
+
+.teks {
+  box-shadow: 0 8px 15px rgb(120, 120, 120);
+  border: 1px solid rgb(255, 255, 255);
+  display: flex;
+  margin-left: 216px;
+  justify-content: center;
+  align-items: center;
+  width: 900px;
+  /* Mengatur lebar elemen */
+  height: 200px;
+  /* Mengatur tinggi elemen */
+
+}
+
+.teks p {
+  text-align: center;
+  width: 80%;
+  justify-content: center;
+  font-family: serif;
+  font-size: large;
+  letter-spacing: 1px;
+  line-height: 30px;
+
+}
+
+.team .box-team {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 10px;
+  row-gap: 10px;
+
+}
+
+.team .box-team .box {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  transition: transform 0.3s ease-in-out;
+}
+
+.team .box-team .box:hover {
+  transform: scale(1.1);
+
+}
+
+.team .box-team .box img {
+  width: 88%;
+  height: 250px;
+  margin-bottom: 50px;
+}
+
+.about {
+  padding: 50px 0 50px 0;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: 1720px 420px;
+
+}
+
+.about .box-about {
+  color: rgb(5, 5, 5);
+  text-align: center;
+  width: 50%;
+  padding-top: -15px;
+}
+
+.about .box-about p {
+  margin-bottom: 10px;
+  margin-top: 20px;
+  font-family: serif;
+  font-size: 18px;
+}
+
+.daftar {
+  padding: 50px 0 50px 0;
+  background-image: url("../img/villaa1.jpg");
+  background-repeat: no-repeat;
+  background-size: 1720px 520px;
+  margin-bottom: ;
+}
+
+.daftar .box-daftar {
+  color: rgb(255, 255, 255);
+  text-align: center;
+
+}
+
+.daftar .box-daftar p {
+  margin-bottom: 10px;
+  margin-top: 20px;
+  font-family: serif;
+  font-size: 18px;
+}
+
+.daftar .box-daftar h3 {
+  font-weight: 400;
+  font-size: 29px;
+  font-family: serif;
+  color: rgb(255, 255, 255);
+  letter-spacing: 2 px;
+}
+
+.btn {
+  font-family: serif;
+}
+
+footer {
+  text-align: center;
+  background-color: rgb(101, 49, 15);
+  margin-top: 0px;
+  /* Ruang atas footer */
+  padding: 1px;
+  /* Padding di dalam footer */
+  color: #fff;
+}
+
+
+@media screen and (max-width: 768px) {
+  .head {
+    height: 600px;
+    width: ;
+  }
+  #icon-menu {
+    display: block;
+    margin-left: 70px;
+    margin-top: -4px;
+  }
+
+  nav {
+    margin-left: -173px;
+    height: 60px;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    width: 83%;
+    background-color:rgba(0, 0, 0, 0.4);
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+
+  .nav-links.showNavbar {
+    display: flex;
+  }
+
+  nav .logo img {
+    width: 90%;
+  }
+  nav .login img{
+    width:20px;
+    margin-right: 0px;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+    font-size: 12px;
+    font-family: serif;
+    margin-left: -50px;
+  }
+  .nav-links li a {
+    color: inherit;
+    margin-left: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: serif;
+    letter-spacing: 1px;
+    padding: 10px;
+    width: 30%;
+    font-size: 14px;
+  }
+
+
+  .nav-links.scrolled {
+    background-color: rgb(101, 49, 15);
+    /* Change the color and opacity as needed */
+  }
+
+  .content-wrapper {
+    max-width: 350%; /* Adjust the max-width as needed for smaller screens */
+    padding-bottom: 30px; /* Adjust padding as needed for smaller screens */
+    font-size: 15px; /* Adjust font size as needed for smaller screens */
+    margin-left: -57px;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 12px;
+  font-weight: 400; /* Use a valid font-weight value, 100 is very thin */
+  display: inline-block;
+  margin-right: auto; /* Center horizontally */
+  margin-left: 0; /* Center horizontally */
+  margin-bottom: 10px;
+  color: #ffffff;
+  background-color: rgb(101, 49, 15);
+  text-align: center;
+  cursor: pointer;
+ 
+  
+  text-decoration: none;
+  border-radius: 50px;
+  transition: background-color 0.5s ease;
+}
+
+.service {
+  width: 100%; /* Adjust the width for smaller screens */
+  left: 4px; /* Adjust the left position for smaller screens */
+  top: 615px; /* Adjust the top position for smaller screens */
+  bottom: 10px; /* Adjust the bottom position for smaller screens */
+}
+
+.feature h2 {
+  font-size: 8px; /* Adjust the font size for smaller screens */
+}
+.team .box-team .box img {
+  width: 62%;
+  height: auto;
+  margin-bottom: 50px;
+  margin-left: 5px;
+}
+.team {
+  padding: 80px 0px 40px 0;
+  background-color: rgb(255, 255, 255);
+  background-position: center;
+  background-size: cover;
+  margin-top: 36px;
+  margin-left: -39px;
+}
+.image-text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  font-family: serif;
+  font-weight: 600;
+  font-size: 10px;
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Warna latar belakang teks */
+  color: #fff;
+  /* Warna teks */
+  padding: 8px;
+  /* Padding di dalam teks */
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.teks {
+  width: 60%; /* Adjust the width for smaller screens */
+  margin-left: 71px; /* Remove margin for smaller screens or adjust as needed */
+  padding: 20px 20px;
+}
+
+.teks p {
+  width: 100%; /* Adjust the width for smaller screens */
+  font-size: 10px; /* Adjust the font size for smaller screens */
+  line-height: 1.1rem;
+}
+.daftar {
+  
+  background-image: url("../img/villaa1.jpg");
+  background-repeat: no-repeat;
+  background-size: 450px 370px;
+  margin-bottom: ;
+}
+
+.daftar .box-daftar {
+  color: rgb(255, 255, 255);
+  text-align: center;
+
+}
+
+.daftar .box-daftar p {
+  margin-bottom: 10px;
+  margin-top: 20px;
+  font-family: serif;
+  font-size: 17px;
+}
+
+.daftar .box-daftar h3 {
+  font-weight: 400;
+  font-size: 17px;
+  font-family: serif;
+  color: rgb(255, 255, 255);
+  letter-spacing: 2 px;
+}
+
+.btn {
+  font-family: serif;
+}
+
+footer {
+  font-size: 13px;
+}
+
+}
