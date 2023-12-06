@@ -96,7 +96,7 @@ $('.book-form').submit(function (e) {
       }).then( ()=> {
         $('.book-form input').val('');
         
-        window.location.href = '/frontend/riwayat.html';
+        window.location.href = '/riwayat.html';
       })
       }
     })

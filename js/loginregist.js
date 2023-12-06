@@ -73,7 +73,7 @@ $('.sign-in-form').submit(function (e) {
                 icon: 'success',
                 confirmButtonText: 'OK'
             }).then( () => {
-                window.location.href = '/frontend/index.html';
+                window.location.href = '/index.html';
 
                 const jwtToken = response.token;
                 localStorage.setItem('token', jwtToken);
@@ -114,7 +114,7 @@ $('.sign-up-form').submit(function (e) {
                     $('#usernameRegister').val('');
                     $('#passwordRegister').val('');
                     $('#emailRegister').val('');
-                    window.location.href = '/frontend/index.html';
+                    window.location.href = '/index.html';
                 })
             }
         },
