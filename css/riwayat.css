@@ -99,9 +99,10 @@ main {
     align-items: flex-start;
     background-color: #fff;
     border-radius: 8px;
-    width: 600px;
+    width: 950px;
     flex-direction: row;
     box-shadow: 0 7px 10px rgb(120, 120, 120);
+    margin-left: -29px;
     
 }
 
@@ -132,10 +133,14 @@ main {
     margin-bottom: 15px;
     width: 80%;
   }
+  .elem-group img {
+    margin-left: -20px;
+    width: 130px;
+  }
   
 .elem-group.inlined {
-    width: 40%;
-    margin-top: 2px;
+    width: 50%;
+    margin-top: 10px;
     display: inline-block;
   }
   
@@ -146,11 +151,11 @@ label {
   }
   
 input, select, textarea {
-    border-radius: 2px;
-    border: 1px solid #000000;
+  border: none;
     box-sizing: border-box;
     font-family: 'serif';
     width: 100%;
+    background: rgb(220, 220, 220);
  
   }
   
@@ -220,10 +225,14 @@ input, select, textarea {
 .booking-card-container {
     width: 270px;
     flex-direction: column;
+    margin-left: -5px;
 }
-.booking-info img {
-    width: 220px;
+.elem-group img {
+  margin-left: 0px;
+  width: 130px;
 }
+
+
 .hero p {
     padding-top: 100px;
     font-size: 17px;
