@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Mate+SC&family=Outfit:wght@100;200;300&family=Plus+Jakarta+Sans:wght@300&family=Red+Hat+Display:wght@300&family=Tajawal:wght@300&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    background-image: url('../img/villaa1.jpg'); 
+   
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-attachment: fixed;
+}   
+
+nav {
+    position: fixed;
+    top: 30px;
+    left: 210px;
+    right: inherit;
+    z-index: 9999;
+    width: 68%;
+    background-color:  rgb(101, 49, 15);;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 0rem;
+    color: #ffffff;
+    border-radius: 20px; 
+}
+.nav-links li a:hover {
+    color: hsl(0, 0%, 85%); 
+    text-decoration: ; 
+  }
+nav .logo {
+    font-size: 1.rem;
+    width: 30%;
+}
+
+nav .logo img {
+    padding-top: 0px;
+    width: 95px;
+ 
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    font-family:"Lucida Sans", sans-serif;
+}
+
+.nav-links li a {
+    color: inherit;
+    margin-left:1rem;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: serif;
+    letter-spacing: 1px;
+    padding:10px; 
+    width: 30%;
+    font-size: large;
+}
+.login img {
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: 10px;
+    
+   
+}
+
+.overlay-image {
+    position:center;
+    top: 0px;
+    left: 0px;
+    width: 80%; /* Lebar sesuai dengan elemen kontainer */
+    height: 300%; /* Tinggi sesuai dengan elemen kontainer */
+    z-index: 1;
+    opacity: 0.4;
+}
+.hero p{
+    font-family: 'Cinzel', serif;
+    padding-top: 80px;
+    text-align: center;
+    font-size: 36px;
+    color: white;
+    text-decoration: none;
+}
+
+.about{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+.about .box-about{
+    display: grid;
+    grid-template-rows: auto auto;
+    justify-content: center; /* Pemusatan horizontal */
+    align-items: center; /* Pemusatan vertikal */
+    height: auto;
+    width: 120%; /* Misalnya, membuat elemen mengisi lebar container */
+
+}
+.about .box-about img{
+    height: 350px;
+    width: 600px;
+    justify-content: center; /* Pemusatan horizontal */
+    align-items: center; /* Pemusatan vertikal */
+    margin: 0 auto; /* Pemusatan horizontal */
+    display: block; /* Membuat gambar menjadi elemen blok */
+
+}
+
+.about  .box-about p{
+    font-family: serif;
+    color: white;
+    text-align: center;
+    align-items: center;
+    width:800px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-size:20px;
+}
+

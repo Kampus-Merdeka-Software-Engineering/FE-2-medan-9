@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/loginregist.css">
     <link rel="shortcut icon" href="img/logo2.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10">
 
 </head>
 <body>
@@ -38,7 +39,7 @@
             
             <div class="signin-signup">
               <!-- SIGN IN -->
-              <form action="javascript:void(0)" class="sign-in-form" method="post">
+              <form action="" class="sign-in-form" method="post">
                 <h2 class="title">Login</h2>
                 <hr>
                 <div class="input-field">
@@ -49,14 +50,16 @@
                   
                   <input type="password" placeholder="Password" name="password" id="passwordLogin" required/>
                 </div>
-                <input type="submit" value="Login" class="btn" id="btnLogin" />
+                <button type="submit" class="btn" id="btnSign">
+                  LOGIN
+                </button>
                 <p class="account-text">
                   Don't have an account?
                   <a href="#" id="sign-up-btn2">Register</a>
                 </p>
               </form>
               <!-- SIGN UP -->
-              <form action="javascript:void(0)" class="sign-up-form" method="post">
+              <form action="" class="sign-up-form" method="post">
                 <h2 class="title">Register</h2>
                 <hr>
                 <div class="input-field">
@@ -71,7 +74,9 @@
                  
                   <input type="password" placeholder="Password" id="passwordRegister" required/>
                 </div>
-                <input type="submit" value="Register" class="btn" id="btnRegister"/>
+                <button class="btn" type="submit">
+                  REGISTER
+                </button>
                 <p class="account-text">
                   Already have an account?
                   <a href="index.html" id="sign-in-btn2">Login</a>
@@ -104,7 +109,9 @@
         </div>
       </div>
   </div>
- 
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"></script>
   <script src="./js/loginregist.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </body>   
 </html>

@@ -47,7 +47,62 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Menggunakan toLocaleString() untuk format angka
     document.getElementById("total").value = "Rp " + total.toLocaleString("id-ID");
+    const JWTToken = localStorage.getItem('token');
+
+    if (JWTToken) {
+      // Token ditemukan di localStorage
+      console.log('Token ditemukan:', JWTToken);
+    } else {
+      // Token tidak ditemukan di localStorage
+      console.log('Token tidak ditemukan.');
+    }
+
 }
 
 // Panggilan awal untuk mengatur total default
 updatePrice();
+
+const yourJWTToken = localStorage.getItem('token');
+
+
+$('.book-form').submit(function (e) {
+  e.preventDefault();
+
+  $.ajax({
+    type: 'POST',
+    url: 'http://localhost:5001/reservation',
+    data: JSON.stringify({
+      nama: $('#nama').val(),
+      check_in: $('#checkin').val(),
+      check_out: $('#checkout').val(),
+      room: $('#jeniskamar').val(),
+      jumlah_room: $('#jumlahkamar').val(),
+      total_harga: $('#total').val(),
+      metode: $('#Payment').val(),
+    }),
+    dataType: 'json',
+    contentType: 'application/json',
+    headers: {
+      Authorization: 'Bearer ' + yourJWTToken,
+    },
+  })
+    .done(function (response) {
+      if (response) {
+        Swal.fire({
+          title: 'Sukses!',
+          text: 'Berhasil memesan tempat.',
+          icon: 'success',
+          confirmButtonText: 'OK'
+      }).then( ()=> {
+        $('.book-form input').val('');
+        
+        window.location.href = '/frontend/riwayat.html';
+      })
+      }
+    })
+    .fail(function (xhr) {
+      console.log(xhr.responseText);
+
+      alert('Failed to make a reservation. Please try again.');
+    });
+});

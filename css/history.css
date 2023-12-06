@@ -1,0 +1,129 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Mate+SC&family=Outfit:wght@100;200;300&family=Plus+Jakarta+Sans:wght@300&family=Red+Hat+Display:wght@300&family=Tajawal:wght@300&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('../img/villaa1.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-attachment: fixed;
+}   
+nav {
+    position: fixed;
+    top: 30px;
+    left: 210px;
+    right: inherit;
+    z-index: 9999;
+    width: 68%;
+    background-color: rgba(0,0,0,0.3);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 0rem;
+    color: #ffffff;
+    font-family:"Lucida Sans", sans-serif;
+    border-radius: 20px; 
+}
+.nav-links li a:hover {
+    color: hsl(0, 0%, 85%); 
+    text-decoration: ; 
+}
+nav .logo {
+    font-size: 1.rem;
+    width: 30%;
+}
+nav .logo img {
+    padding-top: 0px;
+    width: 95px;
+  
+}
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    font-family:"Lucida Sans", sans-serif;
+}
+.nav-links li a {
+    color: inherit;
+    margin-left:1rem;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: serif;
+    letter-spacing: 1px;
+    padding:10px; 
+    width: 30%;
+    font-size: large;
+}
+.login img {
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: 10px;
+    
+   
+  }
+
+.search-container {
+    display: flex;
+    margin: 20px;
+  }
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-container input[type="text"] {
+    padding: 10px;
+    border: 1px solid rgb(101, 49, 15);
+    border-radius: 30px;
+    box-sizing: border-box;
+    width: calc(100% - 40px); /* Adjust the padding and border width */
+    max-width: 500px; /* Set a maximum width if needed */
+    margin-left: 25%; /* Adjust the left margin as needed */
+    margin-right: 10px;
+   
+  }
+  
+  
+  .search-container button {
+    padding: 10px;
+    
+    background-color:	 rgb(101, 49, 15);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 100px;
+  }
+  .search-container button:hover{
+    background-color:   rgb(101, 49, 15);;;
+}
+  
+  /* Style the search icon inside the button */
+  .search-container button img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 180px;
+    margin-bottom: 100px;
+    height: 10vh; /* Adjust the height as needed */
+    color: rgb(255, 255, 255); /* Text color */
+  }
+  
+  .hero p {
+    font-family:  serif;
+  padding-top:40px;
+  text-align: center;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  }

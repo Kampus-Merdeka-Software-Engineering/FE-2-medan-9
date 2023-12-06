@@ -54,6 +54,76 @@ $('#btnLogin').on('click',function() {
     })
 })
 
+$('.sign-in-form').submit(function (e) { 
+    e.preventDefault();
+    $.ajax({
+        type: 'POST',
+        url: 'http://localhost:5001/auth/login',
+        data: JSON.stringify({
+            username: $('#usernameLogin').val(),
+            password: $('#passwordLogin').val(),
+        }),
+        dataType: 'json',
+        contentType: 'application/json',
+        success: function (response) {
+            
+            Swal.fire({
+                title: 'Sukses!',
+                text: 'Anda berhasil login.',
+                icon: 'success',
+                confirmButtonText: 'OK'
+            }).then( () => {
+                window.location.href = '/frontend/index.html';
+
+                const jwtToken = response.token;
+                localStorage.setItem('token', jwtToken);
+            })
+
+        },
+        error: function(xhr){
+            console.log(xhr.responseText);
+        }
+    });
+});
+
+
+$('.sign-up-form').submit(function (e) { 
+    e.preventDefault();
+    $.ajax({
+        type: "post",
+        url: "http://localhost:5001/auth/create",
+        data: JSON.stringify({
+           username: $('#usernameRegister').val(),
+            password: $('#passwordRegister').val(),
+            email: $('#emailRegister').val()
+        }),
+        dataType: "json",
+        contentType: 'application/json',
+        success: function (response) {
+            if(response){
+                Swal.fire({
+                    title: 'Sukses!',
+                    text: 'Akun berhasil dibuat.',
+                    icon: 'success',
+                    confirmButtonText: 'OK'
+                }).then( ()=> {
+
+                    const jwtToken = response.token;
+                    localStorage.setItem('token', jwtToken);
+                    
+                    $('#usernameRegister').val('');
+                    $('#passwordRegister').val('');
+                    $('#emailRegister').val('');
+                    window.location.href = '/frontend/index.html';
+                })
+            }
+        },
+        error: function(xhr){
+            console.log(xhr.responseText);
+        }
+    });
+});
+
 $('#btnRegister').on('click', function() {
     $.ajax({
         url: 'https://dailydeals-api-production.up.railway.app/register',
