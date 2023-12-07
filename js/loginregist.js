@@ -48,7 +48,7 @@ $('#btnLogin').on('click',function() {
             if (response[0]['message'] === 'Login Successful') {
                 localStorage.setItem('uname', response[0]['payload']['username']);
                 localStorage.setItem('id', response[0]['payload']['id']);
-                window.location.href = 'index.html'
+                window.location.href = '/FE-2-medan-9/index.html'
             }
         }
     })
@@ -73,7 +73,7 @@ $('.sign-in-form').submit(function (e) {
                 icon: 'success',
                 confirmButtonText: 'OK'
             }).then( () => {
-                window.location.href = '/index.html';
+                window.location.href = '/FE-2-medan-9/index.html';
 
                 const jwtToken = response.token;
                 localStorage.setItem('token', jwtToken);
