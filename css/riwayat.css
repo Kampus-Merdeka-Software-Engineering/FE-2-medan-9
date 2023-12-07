@@ -2,7 +2,6 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: 
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center ;
@@ -30,10 +29,9 @@ nav {
 }
 .nav-links li a:hover {
     color: hsl(0, 0%, 85%); 
-    text-decoration: ; 
 }
 nav .logo {
-    font-size: 1.rem;
+    font-size: 1rem;
     width: 30%;
 }
 nav .logo img {
@@ -94,16 +92,40 @@ main {
     justify-content: space-around;
     margin: 20px;
 }
+.booking-card{
+  margin: 1rem 0;
+}
 .booking-card-container {
+
     display: flex;
-    align-items: flex-start;
+    justify-content:space-evenly ;
+    width: max-content;
     background-color: #fff;
     border-radius: 8px;
-    width: 950px;
-    flex-direction: row;
-    box-shadow: 0 7px 10px rgb(120, 120, 120);
-    margin-left: -29px;
-    
+    width: max-content;
+    box-shadow: 0 1px 10px rgb(120, 120, 120);
+    margin: 2rem 0;
+    padding: 1rem;
+}
+
+.bayar{
+  margin-top: 0.5rem;
+}
+.button {
+  padding: 0.3rem 1rem;
+  border: 1px solid rgb(101, 49, 15);
+  border-radius: 4px;
+  background: rgb(101, 49, 15);
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  font-size: small;
+}
+.button:hover {
+  border: 1px solid black;
+  background: transparent;
+  cursor: pointer;
+  color: black;
 }
 
 
@@ -126,22 +148,18 @@ main {
     border-radius: 8px;
 }
 
-
-.elem-group {
-    margin: 10px 0;
-    margin-left: 20px;
-    margin-bottom: 15px;
-    width: 80%;
-  }
+.elem-group{
+  
+}
   .elem-group img {
-    margin-left: -20px;
-    width: 130px;
+    width: 20rem;
+    border-radius: 8px;
+    margin-left: 20px;
   }
   
 .elem-group.inlined {
-    width: 50%;
-    margin-top: 10px;
-    display: inline-block;
+    margin-top: 8px;
+    display: inline-flex;
   }
   
 label {
@@ -156,6 +174,8 @@ input, select, textarea {
     font-family: 'serif';
     width: 100%;
     background: rgb(220, 220, 220);
+    border-radius: 4px;
+    padding: 0.2rem 0.5rem;
  
   }
   
@@ -163,8 +183,17 @@ input, select, textarea {
     width: 80%;
     display: inline-block;
   }
+  .elem-group input {
+    margin-bottom: 0.3rem;
+  }
   
 @media screen and (max-width: 768px) {
+  .elem-group img {
+    width: 15rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+    margin-left: 0px;
+  }
     #icon-menu {
         display: block;
         margin-left: 70px;
@@ -172,7 +201,7 @@ input, select, textarea {
       }
     
       nav {
-        margin-left: -160px;
+        margin-left: -148px;
         height: 60px;
       }
       .nav-links {
@@ -227,10 +256,7 @@ input, select, textarea {
     flex-direction: column;
     margin-left: -5px;
 }
-.elem-group img {
-  margin-left: 0px;
-  width: 130px;
-}
+
 
 
 .hero p {

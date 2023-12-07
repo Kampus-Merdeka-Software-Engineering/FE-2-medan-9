@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invoice Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .invoice-container {
+      max-width: 300px;
+      margin: 20px auto;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+    }
+
+    .invoice-header {
+      text-align: center;
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+
+    .invoice-details,
+    .invoice-items,
+    .invoice-total {
+      margin-top: 10px;
+    }
+
+    .invoice-items ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .invoice-items li {
+      margin-bottom: 5px;
+    }
+
+    .qrcode-container {
+      text-align: center;
+      margin-top: 10px;
+      border: 5px solid black;
+      border-radius: 6px;
+      margin-bottom: 10px;
+      padding: 2px;
+    }
+
+    .qrcode-container div {
+      display: inline-block;
+      vertical-align: top; 
+    }
+
+    .center-vertical {
+      display: inline-block;
+      height: 100%; 
+      vertical-align: middle; 
+    }
+
+
+    .receipt {
+      text-align: left;
+    }
+
+    .receipt-item {
+      margin-bottom: 5px;
+    }
+
+    .total-section {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<div class="invoice-container">
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+<script src="./js/invoice.js"></script>
+
+</body>
+</html>

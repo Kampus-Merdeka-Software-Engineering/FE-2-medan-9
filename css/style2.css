@@ -31,7 +31,6 @@ nav {
 }
 .nav-links li a:hover {
     color: hsl(0, 0%, 85%); 
-    text-decoration: ; 
   }
 nav .logo {
     font-size: 1.rem;
@@ -60,6 +59,7 @@ nav .logo img {
     padding:10px; 
     width: 30%;
     font-size: large;
+    display: block;
 }
 .login img {
     border-radius: 5px;

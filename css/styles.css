@@ -88,6 +88,8 @@ nav .logo img {
 }
 
 .contents {
+  margin: 0;
+  padding: 0;
   height: 50vh;
   color: #fff;
   text-align: center;
@@ -366,7 +368,6 @@ footer {
 @media screen and (max-width: 768px) {
   .head {
     height: 600px;
-    width: ;
   }
   #icon-menu {
     display: block;
@@ -452,7 +453,7 @@ footer {
 }
 
 .service {
-  width: 100%; /* Adjust the width for smaller screens */
+  width: 90%; /* Adjust the width for smaller screens */
   left: 4px; /* Adjust the left position for smaller screens */
   top: 615px; /* Adjust the top position for smaller screens */
   bottom: 10px; /* Adjust the bottom position for smaller screens */
@@ -508,7 +509,7 @@ footer {
   
   background-image: url("../img/villaa1.jpg");
   background-repeat: no-repeat;
-  background-size: 450px 370px;
+  background-size: 380px 370px;
   margin-bottom: ;
 }
 

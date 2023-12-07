@@ -1,48 +1,64 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us</title>
-    <link rel="stylesheet" href="./css/style2.css">
+    <link rel="stylesheet" href="./css/style2.css" />
     <link rel="shortcut icon" href="img/logo2.png" />
-</head>
+    <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10" />
 
-<body>
-    <nav >
-        <div class="logo">
-          <img src="./img/logo2.png" alt="" srcset="">
+  </head>
+
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="./img/logo2.png" alt="" srcset="" />
       </div>
-      <i class="fa-solid fa-bars" style="color: #ffffff;" id="icon-menu"  onclick="handleClick(event)"></i>
+      <i
+        class="fa-solid fa-bars"
+        style="color: #ffffff"
+        id="icon-menu"
+        onclick="handleClick(event)"
+      ></i>
       <ul class="nav-links hideNavbar">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="rooms.html">Rooms</a></li>
-          <li><a href="riwayat.html">History</a></li>
-          <li><a href="team.html">Team</a></li>
-         
+        <li><a href="index.html">Home</a></li>
+        <li><a href="rooms.html">Rooms</a></li>
+        <li><a href="riwayat.html">History</a></li>
+        <li><a href="team.html">Team</a></li>
       </ul>
-          <div class="login">
-            <a href="riwayat.html">
-                <img src="./img/search.png" alt="Search" srcset="">
-            </a>
-            <a href="loginregist.html">
-                <img src="./img/people.png" alt="Login" srcset="">
-            </a>
+      <div class="login">
+        <div class="dropdown" id="userDropdown">
+          <button onclick="toggleDropdown()">
+            <img src="./img/people.png" alt="Login" srcset="" />
+          </button>
+          <div id="dropdown-content" class="dropdown-content"></div>
         </div>
+      </div>
     </nav>
     <section class="hero">
-        <p>About Us</p>
+      <p>About Us</p>
     </section>
     <section class="about">
-            <div class="box-about">
-                <div class="box">
-                    <div class="box">
-                        <img src="./img/villa7.jpg" alt="" />
-                    </div>
-                    <p>Surrounded by the breathtaking scenery of the Ubud rainforest, the Oasis Villa is situated in Tampaksiring, the cultural heart of Bali and is the ideal location to unwind and purify one’s body and soul. Perched overlooking an ancient valley this unique resort is the perfect setting to spend precious moments with your loved ones or to take some valued time out for yourself. </p>
-                </div>
-            </div>
+      <div class="box-about">
+        <div class="box">
+          <div class="box">
+            <img src="./img/villa7.jpg" alt="" />
+          </div>
+          <p>
+            Surrounded by the breathtaking scenery of the Ubud rainforest, the
+            Oasis Villa is situated in Tampaksiring, the cultural heart of Bali
+            and is the ideal location to unwind and purify one’s body and soul.
+            Perched overlooking an ancient valley this unique resort is the
+            perfect setting to spend precious moments with your loved ones or to
+            take some valued time out for yourself.
+          </p>
+        </div>
+      </div>
     </section>
-</body>
+    <script src="./js/nav.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  </body>
 </html>

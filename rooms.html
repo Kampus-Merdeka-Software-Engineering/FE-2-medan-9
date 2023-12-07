@@ -1,75 +1,103 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ethereal Oasis - Rooms</title>
-    <link rel="stylesheet" href="./css/style3.css">
+    <link rel="stylesheet" href="./css/style3.css" />
     <link rel="shortcut icon" href="img/logo2.png" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-    <nav >
-        <div class="logo">
-          <img src="./img/logo2.png" alt="" srcset="">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10" />
+
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="./img/logo2.png" alt="" srcset="" />
       </div>
-      <i class="fa-solid fa-bars" style="color: #ffffff;" id="icon-menu"  onclick="handleClick(event)"></i>
+      <i
+        class="fa-solid fa-bars"
+        style="color: #ffffff"
+        id="icon-menu"
+        onclick="handleClick(event)"
+      ></i>
       <ul class="nav-links hideNavbar">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="rooms.html">Rooms</a></li>
-          <li><a href="riwayat.html">History</a></li>
-          <li><a href="team.html">Team</a></li>
-         
+        <li><a href="index.html">Home</a></li>
+        <li><a href="rooms.html">Rooms</a></li>
+        <li><a href="riwayat.html">History</a></li>
+        <li><a href="team.html">Team</a></li>
       </ul>
-          <div class="login">
-            <a href="riwayat.html">
-                <img src="./img/search.png" alt="Search" srcset="">
-            </a>
-            <a href="loginregist.html">
-                <img src="./img/people.png" alt="Login" srcset="">
-            </a>
+      <div class="login">
+        <div class="dropdown" id="userDropdown">
+          <button onclick="toggleDropdown()">
+            <img src="./img/people.png" alt="Login" srcset="" />
+          </button>
+          <div id="dropdown-content" class="dropdown-content"></div>
         </div>
+      </div>
     </nav>
 
     <section class="hero">
-        <p>Our Rooms</p>
-        <hr class="custom-hr">
+      <p>Our Rooms</p>
+      <hr class="custom-hr" />
     </section>
 
     <section class="rooms">
-        <div class="box">
-            <div class="room">
-                <img src="./img/kamar1.jpg" alt="" />
-                <div class="info">
-                    <h3>Deluxe Valley View</h3>
-                    <p>Each superior valley room has its own private balcony boasting a magnificent view of the lush forest and rice terraces. Lay back and treat yourself to a bath after a day of adventures whilst being serenaded by the sounds of nature.</p>
-                    <a href="#" class="button">IDR 550.000/night</a>
-                </div>
-            
-            </div> 
-            <div class="room">
-                <img src="./img/kamar2.jpg" alt="" />
-                <div class="info">
-                    <h3>One Bedroom Pool Villa</h3>
-                    <p>Tailored to cater for your every need the Pool Villa has everything you could wish for to create special moments that will linger long in the memory. Each Villa has its own private pool and gazebo overlooking the stunning ancient valley.</p>
-                    <a href="#" class="button">IDR 800.000/night</a>
-                </div>
-            </div> 
-            <div class="room">
-                <img src="./img/kamar3.jpg" alt="" />
-                <div class="info">
-                    <h3>Suite Pool Access</h3>
-                    <p>Walk out of your Deluxe room and straight into a large swimming pool with Jacuzzis and adjoining plunge pool. Coupled with the back drop of the exotic valley these spacious Deluxe rooms are ideal for couples enjoying a romantic getaway.</p>
-                    <a href="#" class="button">IDR 1.000.000/night</a>
-                </div>
-                
-            </div>
-        </div> 
+      <div class="box">
+        <div class="room">
+          <img src="./img/kamar1.jpg" alt="" />
+          <div class="info">
+            <h3>Deluxe Valley View</h3>
+            <p>
+              Each superior valley room has its own private balcony boasting a
+              magnificent view of the lush forest and rice terraces. Lay back
+              and treat yourself to a bath after a day of adventures whilst
+              being serenaded by the sounds of nature.
+            </p>
+            <a href="#" class="button">IDR 550.000/night</a>
+          </div>
+        </div>
+        <div class="room">
+          <img src="./img/kamar2.jpg" alt="" />
+          <div class="info">
+            <h3>One Bedroom Pool Villa</h3>
+            <p>
+              Tailored to cater for your every need the Pool Villa has
+              everything you could wish for to create special moments that will
+              linger long in the memory. Each Villa has its own private pool and
+              gazebo overlooking the stunning ancient valley.
+            </p>
+            <a href="#" class="button">IDR 800.000/night</a>
+          </div>
+        </div>
+        <div class="room">
+          <img src="./img/kamar3.jpg" alt="" />
+          <div class="info">
+            <h3>Suite Pool Access</h3>
+            <p>
+              Walk out of your Deluxe room and straight into a large swimming
+              pool with Jacuzzis and adjoining plunge pool. Coupled with the
+              back drop of the exotic valley these spacious Deluxe rooms are
+              ideal for couples enjoying a romantic getaway.
+            </p>
+            <a href="#" class="button">IDR 1.000.000/night</a>
+          </div>
+        </div>
+      </div>
     </section>
     <footer class="copyright">
-        <p>&copy; 2023 Ethereal Oasis Villa</p>
+      <p>&copy; 2023 Ethereal Oasis Villa</p>
     </footer>
     <script src="./js/rooms.js"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="./js/nav.js"></script>
+  </body>
 </html>

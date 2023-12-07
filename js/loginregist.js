@@ -48,35 +48,50 @@ $('#btnLogin').on('click',function() {
             if (response[0]['message'] === 'Login Successful') {
                 localStorage.setItem('uname', response[0]['payload']['username']);
                 localStorage.setItem('id', response[0]['payload']['id']);
-                window.location.href = '/FE-2-medan-9/index.html'
+                window.location.href = 'index.html'
             }
         }
     })
 })
 
+// Mengirim data ke backend menggunakan metode POST
 $('.sign-in-form').submit(function (e) { 
     e.preventDefault();
     $.ajax({
+        //koneksi ke api
         type: 'POST',
         url: 'http://localhost:5001/auth/login',
         data: JSON.stringify({
+            //mengambil data dari input pengguna
             username: $('#usernameLogin').val(),
             password: $('#passwordLogin').val(),
         }),
         dataType: 'json',
         contentType: 'application/json',
+
+
         success: function (response) {
-            
+            //menggunakan sweet alert(swal) untuk menampilkan perungatan berhasil login
             Swal.fire({
                 title: 'Sukses!',
                 text: 'Anda berhasil login.',
                 icon: 'success',
                 confirmButtonText: 'OK'
-            }).then( () => {
-                window.location.href = '/FE-2-medan-9/index.html';
+            }).then( () => { //ketika di klik oke, maka then akan dijalankan
 
+                //mengalihkan ke halaman utama
+                window.location.href = '/frontend/index.html';
+
+                //menyimpan jwtToken untuk cek autentikasi user
                 const jwtToken = response.token;
                 localStorage.setItem('token', jwtToken);
+
+                const email = response.email;
+                localStorage.setItem('email', email);
+
+                //menyimpan username ke lokal storage
+                const username = $('#usernameLogin').val();
+                localStorage.setItem('uname', username);
             })
 
         },
@@ -114,7 +129,7 @@ $('.sign-up-form').submit(function (e) {
                     $('#usernameRegister').val('');
                     $('#passwordRegister').val('');
                     $('#emailRegister').val('');
-                    window.location.href = '/FE-2-medan-9/index.html';
+                    window.location.href = '/frontend/index.html';
                 })
             }
         },

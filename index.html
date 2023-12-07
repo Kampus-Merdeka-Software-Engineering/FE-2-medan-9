@@ -1,125 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ethereal Oasis - Home</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="shortcut icon" href="img/logo2.png" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10">
-
-</head>
-<body>
- 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10" />
+    <link rel="stylesheet" href="./css/nav.css" />
+  </head>
+  <body>
     <div class="head">
-
-      <nav >
+      <nav>
         <div class="logo">
-          <img src="./img/logo2.png" alt="" srcset="">
-      </div>
-      <i class="fa-solid fa-bars" style="color: #ffffff;" id="icon-menu"  onclick="handleClick(event)"></i>
-      <ul class="nav-links hideNavbar">
+          <img src="./img/logo2.png" alt="" srcset="" />
+        </div>
+        <i
+          class="fa-solid fa-bars"
+          style="color: #ffffff"
+          id="icon-menu"
+          onclick="handleClick(event)"
+        ></i>
+        <ul class="nav-links hideNavbar">
           <li><a href="index.html">Home</a></li>
           <li><a href="rooms.html">Rooms</a></li>
           <li><a href="riwayat.html">History</a></li>
           <li><a href="team.html">Team</a></li>
-         
-      </ul>
-          <div class="login">
-            <a href="riwayat.html">
-                <img src="./img/search.png" alt="Search" srcset="">
-            </a>
-            <a href="loginregist.html">
-                <img src="./img/people.png" alt="Login" srcset="">
-            </a>
+        </ul>
+        <div class="login">
+          <div class="dropdown" id="userDropdown">
+            <button onclick="toggleDropdown()">
+              <img src="./img/people.png" alt="Login" srcset="" />
+            </button>
+            <div id="dropdown-content" class="dropdown-content"></div>
+          </div>
         </div>
-    </nav>
+      </nav>
 
-    <div class="contents">
+      <div class="contents">
         <div class="row">
-            <div class="content-wrapper">
-                <p>COME AS A GUEST, LEAVE AS A FRIEND</p>
-                 <a href="book.html" class="btn">BOOK NOW</a>
-            </div>
+          <div class="content-wrapper">
+            <p>COME AS A GUEST, LEAVE AS A FRIEND</p>
+            <a href="book.html" class="btn">BOOK NOW</a>
+          </div>
         </div>
+      </div>
     </div>
-   </div>
-   <div class="container">
-    <div class="service">
-      <div class="feature">
-        <img src="./img/wifi.png" alt="Icon 1">
-        <h2>Free Wifi</h2>
-        
+    <div class="container">
+      <div class="service">
+        <div class="feature">
+          <img src="./img/wifi.png" alt="Icon 1" />
+          <h2>Free Wifi</h2>
+        </div>
+        <div class="feature">
+          <img src="./img/orang.png" alt="Icon 2" />
+          <h2>Safe & Comfortable</h2>
+        </div>
+        <div class="feature">
+          <img src="./img/money.png" alt="Icon 3" />
+          <h2>Affordable Price</h2>
+        </div>
       </div>
-      <div class="feature">
-        <img src="./img/orang.png" alt="Icon 2">
-        <h2>Safe & Comfortable</h2>
-       
-      </div>
-      <div class="feature">
-        <img src="./img/money.png" alt="Icon 3">
-        <h2>Affordable Price</h2>
-      
-      </div>
-  </div>   
-       </div>
-   
+    </div>
+
     <div class="team" id="team">
-        <div class="container">
-          <div class="box-team">
-            <div class="box">
-              <img src="./img/resto.jpeg" alt="" />
-              <div class="image-text">Eats & Wellness Retreat at Ethereal Oasis
-              </div>
+      <div class="container">
+        <div class="box-team">
+          <div class="box">
+            <img src="./img/resto.jpeg" alt="" />
+            <div class="image-text">
+              Eats & Wellness Retreat at Ethereal Oasis
             </div>
-            <div class="box">
-              <img src="./img/spa.jpg" alt="" /> 
-              <div class="image-text">Serene Spa Sanctuary at Ethereal Oasis</div>
-            </div>
-            <div class="box">
-              <img src="./img/yoga.jpg" alt="" /> 
-              <div class="image-text">Yoga Radiance Retreat at Ethereal Oasis</div> 
-            </div>
-            <div class="box">
-                <img src="./img/billiard.jpg" alt="" /> 
-                <div class="image-text">Ethereal Escape Billiard </div>
-              </div>
-              <div class="box">
-                <img src="./img/gym.jpg" alt="" /> 
-                <div class="image-text">Fitness Gym at Ethereal Oasis</div> 
-              </div>
-              <div class="box">
-                <img src="./img/karaoke.jpg" alt="" />
-                <div class="image-text">Harmony Karaoke Lounge</div>  
-              </div>
           </div>
-          <div class="teks">
-            <p>Surrounded by the breathtaking scenery of the Ubud rainforest, the Ethereal Oasis Villa is situated in Tampaksiring, the cultural heart of Bali and is the ideal location to unwind and purify one’s body and soul. Perched overlooking an ancient valley this unique resort is the perfect setting to spend precious moments with your loved ones or to take some valued time out for yourself.</p>
+          <div class="box">
+            <img src="./img/spa.jpg" alt="" />
+            <div class="image-text">Serene Spa Sanctuary at Ethereal Oasis</div>
+          </div>
+          <div class="box">
+            <img src="./img/yoga.jpg" alt="" />
+            <div class="image-text">
+              Yoga Radiance Retreat at Ethereal Oasis
+            </div>
+          </div>
+          <div class="box">
+            <img src="./img/billiard.jpg" alt="" />
+            <div class="image-text">Ethereal Escape Billiard</div>
+          </div>
+          <div class="box">
+            <img src="./img/gym.jpg" alt="" />
+            <div class="image-text">Fitness Gym at Ethereal Oasis</div>
+          </div>
+          <div class="box">
+            <img src="./img/karaoke.jpg" alt="" />
+            <div class="image-text">Harmony Karaoke Lounge</div>
           </div>
         </div>
+        <div class="teks">
+          <p>
+            Surrounded by the breathtaking scenery of the Ubud rainforest, the
+            Ethereal Oasis Villa is situated in Tampaksiring, the cultural heart
+            of Bali and is the ideal location to unwind and purify one’s body
+            and soul. Perched overlooking an ancient valley this unique resort
+            is the perfect setting to spend precious moments with your loved
+            ones or to take some valued time out for yourself.
+          </p>
+        </div>
+      </div>
     </div>
-
-
 
     <div class="daftar" id="daftar">
-        <div class="container">
-          <div class="box-daftar">
-            <h3>
-              Planning a Vacation? <br />
-              Book now at Ethereal Oasis villa
-            </h3>
-            <p>Click the link below!</p>
-            <a href="https://maps.app.goo.gl/GZZyJD5jfZvVfUxV8" class="btn">contact us</a>
-          </div>
+      <div class="container">
+        <div class="box-daftar">
+          <h3>
+            Planning a Vacation? <br />
+            Book now at Ethereal Oasis villa
+          </h3>
+          <p>Click the link below!</p>
+          <a href="https://maps.app.goo.gl/GZZyJD5jfZvVfUxV8" class="btn"
+            >contact us</a
+          >
         </div>
       </div>
+    </div>
     <footer class="copyright">
-        <p>&copy; 2023 Ethereal Oasis Villa</p>
+      <p>&copy; 2023 Ethereal Oasis Villa</p>
     </footer>
-      
-      <script src="./js/index.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-</body>
+
+    <script src="./js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="./js/nav.js"></script>
+  </body>
 </html>

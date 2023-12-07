@@ -62,13 +62,14 @@ document.addEventListener("DOMContentLoaded", function () {
 // Panggilan awal untuk mengatur total default
 updatePrice();
 
+//mengambil token dari local storage
 const yourJWTToken = localStorage.getItem('token');
-
 
 $('.book-form').submit(function (e) {
   e.preventDefault();
 
   $.ajax({
+    //koneksi ke database
     type: 'POST',
     url: 'http://localhost:5001/reservation',
     data: JSON.stringify({
@@ -78,25 +79,29 @@ $('.book-form').submit(function (e) {
       room: $('#jeniskamar').val(),
       jumlah_room: $('#jumlahkamar').val(),
       total_harga: $('#total').val(),
-      metode: $('#Payment').val(),
+      metode: $('#Payment').val(), //mengambil value dari form
     }),
     dataType: 'json',
     contentType: 'application/json',
     headers: {
+      // authorization user apakah sudah login
       Authorization: 'Bearer ' + yourJWTToken,
     },
   })
+
+  //ketika sudah ter autentikasi maka akan lanjut
     .done(function (response) {
       if (response) {
+        //menggunakan sweet alert untuk menampilkan pop up pesan berhasil
         Swal.fire({
           title: 'Sukses!',
           text: 'Berhasil memesan tempat.',
           icon: 'success',
           confirmButtonText: 'OK'
-      }).then( ()=> {
-        $('.book-form input').val('');
+      }).then( ()=> { //ketika di klik ok maka akan lanjut ke then
+        $('.book-form input').val(''); // celar input form
         
-        window.location.href = '/frontend/riwayat.html';
+        window.location.href = '/frontend/riwayat.html'; // redirect ke halaman riwayat
       })
       }
     })
