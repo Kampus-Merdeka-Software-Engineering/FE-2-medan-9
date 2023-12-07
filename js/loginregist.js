@@ -48,7 +48,7 @@ $('#btnLogin').on('click',function() {
             if (response[0]['message'] === 'Login Successful') {
                 localStorage.setItem('uname', response[0]['payload']['username']);
                 localStorage.setItem('id', response[0]['payload']['id']);
-                window.location.href = 'index.html'
+                window.location.href = '/FE-2-medan-9/index.html'
             }
         }
     })
@@ -80,7 +80,7 @@ $('.sign-in-form').submit(function (e) {
             }).then( () => { //ketika di klik oke, maka then akan dijalankan
 
                 //mengalihkan ke halaman utama
-                window.location.href = '/frontend/index.html';
+                window.location.href = '/FE-2-medan-9/index.html';
 
                 //menyimpan jwtToken untuk cek autentikasi user
                 const jwtToken = response.token;
@@ -129,7 +129,7 @@ $('.sign-up-form').submit(function (e) {
                     $('#usernameRegister').val('');
                     $('#passwordRegister').val('');
                     $('#emailRegister').val('');
-                    window.location.href = '/frontend/index.html';
+                    window.location.href = '/FE-2-medan-9/index.html';
                 })
             }
         },

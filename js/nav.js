@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             localStorage.clear(); // Logout successful
             //mengalihkan ke halaman utama
-            window.location.href = '/frontend/index.html';
+            window.location.href = '/FE-2-medan-9/index.html';
         })
       } else {
         console.error(data.message); // Logout failed

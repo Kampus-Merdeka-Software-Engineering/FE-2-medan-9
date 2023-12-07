@@ -101,7 +101,7 @@ $('.book-form').submit(function (e) {
       }).then( ()=> { //ketika di klik ok maka akan lanjut ke then
         $('.book-form input').val(''); // celar input form
         
-        window.location.href = '/frontend/riwayat.html'; // redirect ke halaman riwayat
+        window.location.href = '/FE-2-medan-9/riwayat.html'; // redirect ke halaman riwayat
       })
       }
     })
