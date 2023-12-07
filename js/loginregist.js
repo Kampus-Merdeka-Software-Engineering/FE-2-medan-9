@@ -114,7 +114,7 @@ $('.sign-up-form').submit(function (e) {
                     $('#usernameRegister').val('');
                     $('#passwordRegister').val('');
                     $('#emailRegister').val('');
-                    window.location.href = '/index.html';
+                    window.location.href = '/FE-2-medan-9/index.html';
                 })
             }
         },
