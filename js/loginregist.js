@@ -60,7 +60,7 @@ $('.sign-in-form').submit(function (e) {
     $.ajax({
         //koneksi ke api
         type: 'POST',
-        url: 'http://localhost:5001/auth/login',
+        url: 'https://dailydeals-api-production.up.railway.app/login',
         data: JSON.stringify({
             //mengambil data dari input pengguna
             username: $('#usernameLogin').val(),
@@ -106,7 +106,7 @@ $('.sign-up-form').submit(function (e) {
     e.preventDefault();
     $.ajax({
         type: "post",
-        url: "http://localhost:5001/auth/create",
+        url: "https://be-2-medan-9-production.up.railway.app/auth/create",
         data: JSON.stringify({
            username: $('#usernameRegister').val(),
             password: $('#passwordRegister').val(),
@@ -141,7 +141,7 @@ $('.sign-up-form').submit(function (e) {
 
 $('#btnRegister').on('click', function() {
     $.ajax({
-        url: 'https://dailydeals-api-production.up.railway.app/register',
+        url: 'be-2-medan9.up.railway.app',
         type: 'POST',
         data: JSON.stringify({
             username: $('#usernameRegister').val(),
