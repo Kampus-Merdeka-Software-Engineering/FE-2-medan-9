@@ -69,9 +69,9 @@ $('.book-form').submit(function (e) {
   e.preventDefault();
 
   $.ajax({
-    //koneksi ke database
+
     type: 'POST',
-    url: 'http://localhost:5001/reservation',
+    url: 'https://be-2-medan-9-production.up.railway.app/reservation',
     data: JSON.stringify({
       nama: $('#nama').val(),
       check_in: $('#checkin').val(),

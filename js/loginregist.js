@@ -35,7 +35,7 @@ $(function() {
 
 $('#btnLogin').on('click',function() {
     $.ajax({
-        url: 'https://dailydeals-api-production.up.railway.app/login',
+        url: 'https://be-2-medan-9-production.up.railway.app/auth/login',
         type: 'POST',
         data: JSON.stringify({
             username: $('#usernameLogin').val(),
@@ -60,7 +60,7 @@ $('.sign-in-form').submit(function (e) {
     $.ajax({
         //koneksi ke api
         type: 'POST',
-        url: 'https://dailydeals-api-production.up.railway.app/login',
+        url: 'https://be-2-medan-9-production.up.railway.app/auth/login',
         data: JSON.stringify({
             //mengambil data dari input pengguna
             username: $('#usernameLogin').val(),

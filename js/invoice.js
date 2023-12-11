@@ -2,7 +2,7 @@ async function fetchDataAndDisplayInvoice() {
   try {
     const yourJWTToken = localStorage.getItem('token');
     const idReservation = getIdReservationFromQueryString();
-    const url = `http://localhost:5001/get-reservation?id_reservasi=${idReservation}`;
+    const url = `https://be-2-medan-9-production.up.railway.app/get-reservation?id_reservasi=${idReservation}`;
 
     const response = await fetch(url, {
       method: 'GET',

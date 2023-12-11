@@ -38,7 +38,7 @@ function handleClick(event){
   const yourJWTToken = localStorage.getItem('token');
   try {
     //melakukan fecth data reservation menggunakan api get-reservation
-    const response = await fetch('http://localhost:5001/get-reservation', {
+    const response = await fetch('https://be-2-medan-9-production.up.railway.app/get-reservation', {
       method: 'GET',
       headers: {
         Authorization: 'Bearer ' + yourJWTToken,

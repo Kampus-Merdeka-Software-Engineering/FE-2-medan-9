@@ -34,12 +34,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   logoutButton.addEventListener('click', async () => {
     try {
-      const response = await fetch('http://127.0.0.1:5001/auth/logout', {
+      const response = await fetch('https://be-2-medan-9-production.up.railway.app/auth/logout', {
         method: 'POST',
-        credentials: 'include', // Send cookies
         headers: {
           Authorization: 'Bearer ' + yourJWTToken,
-          'Content-Type': 'application/json',
+          'Content-Type': 'application/json; chartset=utf-8',
         },
       });
 
