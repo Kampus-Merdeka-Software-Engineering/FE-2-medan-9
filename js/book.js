@@ -108,6 +108,6 @@ $('.book-form').submit(function (e) {
     .fail(function (xhr) {
       console.log(xhr.responseText);
 
-      alert('Failed to make a reservation. Please try again.');
+      alert('Failed to make a reservation. Please register now!!!');
     });
 });
